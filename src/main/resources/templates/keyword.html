@@ -51,6 +51,7 @@ function placesSearchCB (data, status, pagination) {
         var bounds = new daum.maps.LatLngBounds();
 
         for (var i=0; i<data.length; i++) {
+        	console.log(data);
             displayMarker(data[i]);    
             bounds.extend(new daum.maps.LatLng(data[i].y, data[i].x));
         }       
